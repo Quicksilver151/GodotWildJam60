@@ -1,0 +1,77 @@
+[gd_scene load_steps=4 format=3 uid="uid://b1p1chw86k30"]
+
+[ext_resource type="Script" path="res://Scenes/SceneCode/MenuScreen.gd" id="1_m7hlq"]
+[ext_resource type="FontFile" uid="uid://dxrq1tm1s7lav" path="res://Assets/Fonts/ProggyCleanTT CE Nerd Font Complete.ttf" id="1_wsqxd"]
+
+[sub_resource type="Theme" id="Theme_dfirg"]
+default_font = ExtResource("1_wsqxd")
+Button/colors/font_color = Color(0.941176, 0.384314, 0.294118, 1)
+Button/colors/font_disabled_color = Color(0, 0, 0, 1)
+Button/colors/font_focus_color = Color(0.2914, 0.48598, 0.94, 1)
+Button/colors/font_hover_color = Color(0.2914, 0.48598, 0.94, 1)
+Button/colors/font_hover_pressed_color = Color(1, 0.603656, 0.539459, 1)
+Button/colors/font_outline_color = Color(0, 0, 0, 1)
+Button/colors/font_pressed_color = Color(1, 0.603656, 0.539459, 1)
+
+[node name="MenuScreen" type="MarginContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = SubResource("Theme_dfirg")
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+script = ExtResource("1_m7hlq")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 16
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+theme_override_font_sizes/font_size = 64
+text = "Game"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Buttons" type="VBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+theme_override_constants/separation = 16
+
+[node name="Play" type="Button" parent="VBoxContainer/Buttons"]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_font_sizes/font_size = 32
+text = "Play"
+flat = true
+
+[node name="About" type="Button" parent="VBoxContainer/Buttons"]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_font_sizes/font_size = 32
+text = "About"
+flat = true
+
+[node name="Settings" type="Button" parent="VBoxContainer/Buttons"]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_font_sizes/font_size = 32
+text = "Settings"
+flat = true
+
+[node name="Quit" type="Button" parent="VBoxContainer/Buttons"]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_font_sizes/font_size = 32
+text = "Quit"
+flat = true
