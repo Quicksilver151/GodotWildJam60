@@ -71,7 +71,7 @@ text = "
 layout_mode = 2
 size_flags_horizontal = 4
 theme_override_colors/font_color = Color(0.941176, 0.384314, 0.294118, 1)
-text = "This was a game made for the game jam: Godot Wild Jam #60"
+text = "This was a game made for the game jam: Godot Wild Jam #60 ツ"
 
 [node name="TextureRect5" type="TextureRect" parent="MarginContainer/ScrollContainer/VBoxContainer"]
 custom_minimum_size = Vector2(540, 0)
@@ -79,6 +79,13 @@ layout_mode = 2
 size_flags_vertical = 4
 texture = ExtResource("2_v604k")
 expand_mode = 5
+
+[node name="Label3" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.941176, 0.384314, 0.294118, 1)
+text = "V         V
+V  scroll V"
 
 [node name="HBoxContainer" type="VBoxContainer" parent="MarginContainer/ScrollContainer/VBoxContainer"]
 layout_mode = 2
@@ -111,24 +118,20 @@ stretch_mode = 5
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 4
-theme_override_constants/separation = -140
 
 [node name="TextureRect3" type="TextureRect" parent="MarginContainer/ScrollContainer/VBoxContainer/HBoxContainer/VBoxContainer2"]
 custom_minimum_size = Vector2(50, 100)
 layout_mode = 2
 size_flags_vertical = 4
 texture = ExtResource("5_7fvrl")
-expand_mode = 2
 stretch_mode = 5
 
 [node name="TextureRect4" type="TextureRect" parent="MarginContainer/ScrollContainer/VBoxContainer/HBoxContainer/VBoxContainer2"]
 texture_filter = 5
-custom_minimum_size = Vector2(50, 100)
 layout_mode = 2
 size_flags_vertical = 4
 texture = ExtResource("6_fy2xq")
-expand_mode = 4
-stretch_mode = 5
+expand_mode = 5
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 2

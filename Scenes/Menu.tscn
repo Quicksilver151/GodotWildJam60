@@ -1,7 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://b1p1chw86k30"]
+[gd_scene load_steps=5 format=3 uid="uid://b1p1chw86k30"]
 
 [ext_resource type="Script" path="res://Scenes/SceneCode/MenuScreen.gd" id="1_m7hlq"]
 [ext_resource type="FontFile" uid="uid://dxrq1tm1s7lav" path="res://Assets/Fonts/ProggyCleanTT CE Nerd Font Complete.ttf" id="1_wsqxd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cgunq"]
 
 [sub_resource type="Theme" id="Theme_dfirg"]
 default_font = ExtResource("1_wsqxd")
@@ -12,6 +14,7 @@ Button/colors/font_hover_color = Color(0.2914, 0.48598, 0.94, 1)
 Button/colors/font_hover_pressed_color = Color(1, 0.603656, 0.539459, 1)
 Button/colors/font_outline_color = Color(0, 0, 0, 1)
 Button/colors/font_pressed_color = Color(1, 0.603656, 0.539459, 1)
+Button/styles/focus = SubResource("StyleBoxEmpty_cgunq")
 
 [node name="MenuScreen" type="MarginContainer"]
 anchors_preset = 15
@@ -37,10 +40,15 @@ theme_override_constants/separation = 16
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 6
+theme_override_colors/font_color = Color(0.0784314, 0.133333, 0.25098, 1)
+theme_override_colors/font_outline_color = Color(0.941176, 0.384314, 0.294118, 1)
+theme_override_constants/outline_size = 8
 theme_override_font_sizes/font_size = 64
-text = "Game"
+text = "{ The Mechanisms }"
 horizontal_alignment = 1
 vertical_alignment = 1
+visible_characters = 17
+visible_ratio = 1.0625
 
 [node name="Buttons" type="VBoxContainer" parent="VBoxContainer"]
 layout_mode = 2
