@@ -1,0 +1,16 @@
+[gd_resource type="Theme" load_steps=3 format=3 uid="uid://bygdrsewpl0l7"]
+
+[ext_resource type="FontFile" uid="uid://dxrq1tm1s7lav" path="res://Assets/Fonts/ProggyCleanTT CE Nerd Font Complete.ttf" id="1_ajf18"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cgunq"]
+
+[resource]
+default_font = ExtResource("1_ajf18")
+Button/colors/font_color = Color(0.941176, 0.384314, 0.294118, 1)
+Button/colors/font_disabled_color = Color(0, 0, 0, 1)
+Button/colors/font_focus_color = Color(0.2914, 0.48598, 0.94, 1)
+Button/colors/font_hover_color = Color(0.2914, 0.48598, 0.94, 1)
+Button/colors/font_hover_pressed_color = Color(1, 0.603656, 0.539459, 1)
+Button/colors/font_outline_color = Color(0, 0, 0, 1)
+Button/colors/font_pressed_color = Color(1, 0.603656, 0.539459, 1)
+Button/styles/focus = SubResource("StyleBoxEmpty_cgunq")
